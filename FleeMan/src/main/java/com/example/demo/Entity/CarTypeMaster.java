@@ -32,6 +32,54 @@ public class CarTypeMaster {
 
 	 @Column(name = "image_path")
 	 private String imagePath;
+
+	public long getCarTypeId() {
+		return carTypeId;
+	}
+
+	public void setCarTypeId(long carTypeId) {
+		this.carTypeId = carTypeId;
+	}
+
+	public String getCarTypeName() {
+		return carTypeName;
+	}
+
+	public void setCarTypeName(String carTypeName) {
+		this.carTypeName = carTypeName;
+	}
+
+	public double getDailyRate() {
+		return dailyRate;
+	}
+
+	public void setDailyRate(double dailyRate) {
+		this.dailyRate = dailyRate;
+	}
+
+	public double getWeeklyRate() {
+		return weeklyRate;
+	}
+
+	public void setWeeklyRate(double weeklyRate) {
+		this.weeklyRate = weeklyRate;
+	}
+
+	public double getMonthlyRate() {
+		return monthlyRate;
+	}
+
+	public void setMonthlyRate(double monthlyRate) {
+		this.monthlyRate = monthlyRate;
+	}
+
+	public String getImagePath() {
+		return imagePath;
+	}
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
 	
 	
 }
