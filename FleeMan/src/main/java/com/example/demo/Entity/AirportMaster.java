@@ -37,7 +37,55 @@ public class AirportMaster {
     @JoinColumn(name = "hub_id")
     private HubMaster hub;
     
-    @Column(name = "airport_code")
+    public int getAirportId() {
+		return airportId;
+	}
+
+	public void setAirportId(int airportId) {
+		this.airportId = airportId;
+	}
+
+	public String getAirportName() {
+		return airportName;
+	}
+
+	public void setAirportName(String airportName) {
+		this.airportName = airportName;
+	}
+
+	public CityMaster getCity() {
+		return city;
+	}
+
+	public void setCity(CityMaster city) {
+		this.city = city;
+	}
+
+	public StateMaster getState() {
+		return state;
+	}
+
+	public void setState(StateMaster state) {
+		this.state = state;
+	}
+
+	public HubMaster getHub() {
+		return hub;
+	}
+
+	public void setHub(HubMaster hub) {
+		this.hub = hub;
+	}
+
+	public String getAirportCode() {
+		return airportCode;
+	}
+
+	public void setAirportCode(String airportCode) {
+		this.airportCode = airportCode;
+	}
+
+	@Column(name = "airport_code")
     private String airportCode;
 
 }
