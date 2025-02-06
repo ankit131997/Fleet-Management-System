@@ -39,5 +39,53 @@ public class HubMaster {
 	@JoinColumn(name = "state_id")
 	private StateMaster state;
 
+	public int getHubId() {
+		return hubId;
+	}
+
+	public void setHubId(int hubId) {
+		this.hubId = hubId;
+	}
+
+	public String getHubName() {
+		return hubName;
+	}
+
+	public void setHubName(String hubName) {
+		this.hubName = hubName;
+	}
+
+	public String getHubAddressAndDetails() {
+		return hubAddressAndDetails;
+	}
+
+	public void setHubAddressAndDetails(String hubAddressAndDetails) {
+		this.hubAddressAndDetails = hubAddressAndDetails;
+	}
+
+	public Long getContactNumber() {
+		return contactNumber;
+	}
+
+	public void setContactNumber(Long contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
+	public CityMaster getCity() {
+		return city;
+	}
+
+	public void setCity(CityMaster city) {
+		this.city = city;
+	}
+
+	public StateMaster getState() {
+		return state;
+	}
+
+	public void setState(StateMaster state) {
+		this.state = state;
+	}
+
 	 
 }
