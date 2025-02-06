@@ -20,6 +20,38 @@ public class AddOnMaster {
     @Column(name = "add_on_id")
     private int addOnId;
 	
+	public int getAddOnId() {
+		return addOnId;
+	}
+
+	public void setAddOnId(int addOnId) {
+		this.addOnId = addOnId;
+	}
+
+	public String getAddOnName() {
+		return addOnName;
+	}
+
+	public void setAddOnName(String addOnName) {
+		this.addOnName = addOnName;
+	}
+
+	public double getAddonDailyRate() {
+		return addonDailyRate;
+	}
+
+	public void setAddonDailyRate(double addonDailyRate) {
+		this.addonDailyRate = addonDailyRate;
+	}
+
+	public LocalDateTime getRateValidUntil() {
+		return rateValidUntil;
+	}
+
+	public void setRateValidUntil(LocalDateTime rateValidUntil) {
+		this.rateValidUntil = rateValidUntil;
+	}
+
 	@Column(name="add_on_name")
 	private String addOnName;
 	
