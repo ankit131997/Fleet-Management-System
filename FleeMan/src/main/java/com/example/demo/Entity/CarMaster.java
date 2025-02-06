@@ -51,7 +51,79 @@ public class CarMaster {
     @Column(name = "maintenance_due_date")
     private Date maintenanceDueDate;
 
-    public enum AvailabilityStatus {
+    public int getCarId() {
+		return carId;
+	}
+
+	public void setCarId(int carId) {
+		this.carId = carId;
+	}
+
+	public CarTypeMaster getCarType() {
+		return carType;
+	}
+
+	public void setCarType(CarTypeMaster carType) {
+		this.carType = carType;
+	}
+
+	public String getCarName() {
+		return carName;
+	}
+
+	public void setCarName(String carName) {
+		this.carName = carName;
+	}
+
+	public String getNumberPlate() {
+		return numberPlate;
+	}
+
+	public void setNumberPlate(String numberPlate) {
+		this.numberPlate = numberPlate;
+	}
+
+	public String getStatus() {
+		return Status;
+	}
+
+	public void setStatus(String status) {
+		Status = status;
+	}
+
+	public double getMileage() {
+		return mileage;
+	}
+
+	public void setMileage(double mileage) {
+		this.mileage = mileage;
+	}
+
+	public HubMaster getHub() {
+		return hub;
+	}
+
+	public void setHub(HubMaster hub) {
+		this.hub = hub;
+	}
+
+	public AvailabilityStatus getIsAvailable() {
+		return isAvailable;
+	}
+
+	public void setIsAvailable(AvailabilityStatus isAvailable) {
+		this.isAvailable = isAvailable;
+	}
+
+	public Date getMaintenanceDueDate() {
+		return maintenanceDueDate;
+	}
+
+	public void setMaintenanceDueDate(Date maintenanceDueDate) {
+		this.maintenanceDueDate = maintenanceDueDate;
+	}
+
+	public enum AvailabilityStatus {
         Y, N
     }
 	
