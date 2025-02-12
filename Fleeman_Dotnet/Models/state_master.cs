@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fleeman_Dotnet.Models;
@@ -10,9 +11,11 @@ namespace Fleeman_Dotnet.Models;
 public partial class state_master
 {
     [Key]
+    [JsonPropertyName("stateId")]
     public int state_id { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("stateName")]
     public string? state_name { get; set; }
 
     [InverseProperty("state")]
