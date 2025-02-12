@@ -13,7 +13,19 @@ namespace Fleeman_Dotnet
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+	    
+	    
 
+	    builder.Services.AddCors(options =>
+ {
+     options.AddPolicy("AllowAll",
+         policy =>
+         {
+             policy.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+         });
+ });
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -22,7 +34,7 @@ namespace Fleeman_Dotnet
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+	    app.UseCors("AllowAll"); // Apply CORS policy
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fleeman_Dotnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+704cc7c3ba4d5d572674d2ca4ffc9c1f39da79b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+980b042c901db429a1d30a42e1befe5385296298")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fleeman_Dotnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fleeman_Dotnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
