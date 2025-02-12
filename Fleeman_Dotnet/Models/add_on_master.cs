@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fleeman_Dotnet.Models;
@@ -10,14 +11,18 @@ namespace Fleeman_Dotnet.Models;
 public partial class add_on_master
 {
     [Key]
+    [JsonPropertyName("addOnId")]
     public int add_on_id { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("addOnName")]
     public string? add_on_name { get; set; }
 
+    [JsonPropertyName("addonDailyRate")]
     public double? add_on_daily_rate { get; set; }
 
     [MaxLength(6)]
+    [JsonPropertyName("rateValidUntil")]
     public DateTime? rate_valid_until { get; set; }
 
     [InverseProperty("addon")]

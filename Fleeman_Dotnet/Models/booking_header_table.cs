@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fleeman_Dotnet.Models;
@@ -13,39 +14,50 @@ namespace Fleeman_Dotnet.Models;
 public partial class booking_header_table
 {
     [Key]
+    [JsonPropertyName("bookingId")]
     public long booking_id { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("Bookcar")]
     public string? book_car { get; set; }
 
     [StringLength(255)]
     public string? address { get; set; }
 
+    [JsonPropertyName("bookingDate")]
     public DateOnly? booking_date { get; set; }
 
+    [JsonPropertyName("dailyRate")]
     public double? daily_rate { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("emailId")]
     public string? email_id { get; set; }
 
+    [JsonPropertyName("endDate")]
     public DateOnly? end_date { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("firstName")]
     public string? first_name { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("lastName")]
     public string? last_name { get; set; }
 
+    [JsonPropertyName("monthlyRate")]
     public double? monthly_rate { get; set; }
 
     [StringLength(255)]
     public string? pin { get; set; }
 
+    [JsonPropertyName("startDate")]
     public DateOnly? start_date { get; set; }
 
     [StringLength(255)]
     public string? state { get; set; }
 
+    [JsonPropertyName("weeklyRate")]
     public double? weekly_rate { get; set; }
 
     public int? car_id { get; set; }

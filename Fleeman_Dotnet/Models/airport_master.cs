@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fleeman_Dotnet.Models;
@@ -13,12 +14,15 @@ namespace Fleeman_Dotnet.Models;
 public partial class airport_master
 {
     [Key]
+    [JsonPropertyName("airportId")]
     public int airport_id { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("airportCode")]
     public string? airport_code { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("airportName")]
     public string? airport_name { get; set; }
 
     public int? city_id { get; set; }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fleeman_Dotnet.Models;
@@ -13,22 +14,28 @@ namespace Fleeman_Dotnet.Models;
 public partial class car_master
 {
     [Key]
+    [JsonPropertyName("carId")]
     public int car_id { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("Status")]
     public string? status { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("carName")]
     public string? car_name { get; set; }
 
     [Column(TypeName = "enum('N','Y')")]
+    [JsonPropertyName("isAvailable")]
     public string? is_available { get; set; }
 
+    [JsonPropertyName("maintenanceDueDate")]
     public DateOnly? maintenance_due_date { get; set; }
 
     public double? mileage { get; set; }
 
     [StringLength(50)]
+    [JsonPropertyName("numberPlate")]
     public string? number_plate { get; set; }
 
     public long? cartype_id { get; set; }

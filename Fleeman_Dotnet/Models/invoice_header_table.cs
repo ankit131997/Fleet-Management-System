@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fleeman_Dotnet.Models;
@@ -13,24 +14,32 @@ namespace Fleeman_Dotnet.Models;
 public partial class invoice_header_table
 {
     [Key]
+    [JsonPropertyName("invoiceId")]
     public long invoice_id { get; set; }
 
     [StringLength(255)]
+    [JsonPropertyName("customerDetails")]
     public string? customer_details { get; set; }
 
+    
     public DateOnly? date { get; set; }
 
+    [JsonPropertyName("handoverDate")]
     public DateOnly? handover_date { get; set; }
 
     [StringLength(255)]
     public string? rate { get; set; }
 
+    [JsonPropertyName("rentalAmt")]
     public double? rental_amt { get; set; }
 
+    [JsonPropertyName("returnDate")]
     public DateOnly? return_date { get; set; }
 
+    [JsonPropertyName("totalAddOnAmt")]
     public double? total_addon_amt { get; set; }
 
+    [JsonPropertyName("totalAmt")]
     public double? total_amt { get; set; }
 
     public long? booking_id { get; set; }

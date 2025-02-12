@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fleeman_Dotnet.Models;
@@ -13,6 +14,7 @@ namespace Fleeman_Dotnet.Models;
 public partial class user
 {
     [Key]
+    [JsonPropertyName("Id")]
     public int id { get; set; }
 
     public string? email { get; set; }
