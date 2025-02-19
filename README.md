@@ -13,7 +13,7 @@ Fleet Management System (FLEEMAN) is a 🏗️ microservices-based application d
 ## 🏗️ Tech Stack
 ### 🎨 Frontend:
 - ⚛️ React.js
-- 🎨 Tailwind CSS / 🎨 Bootstrap
+- 🎨 Bootstrap
 - 📡 Fetch for API communication
 
 ### 🔙 Backend (⚙️ ASP.NET Core Microservices):
