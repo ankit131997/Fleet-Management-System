@@ -33,7 +33,6 @@ Fleet Management System (FLEEMAN) is a 🏗️ microservices-based application d
 
 ### 🚀 DevOps & Deployment:
 - 🐳 Docker for containerization
-- ☸️ Kubernetes (Optional for service orchestration)
 - 🤖 GitHub Actions for CI/CD automation
 
 ## ⚙️ Installation & Setup
