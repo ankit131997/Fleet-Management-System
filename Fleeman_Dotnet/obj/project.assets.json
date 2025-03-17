@@ -7951,24 +7951,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anura\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\sande\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project_Fleet_management\\Fleet-Management-System\\Fleeman_Dotnet\\Fleeman_Dotnet.csproj",
+      "projectUniqueName": "C:\\Users\\sande\\OneDrive\\Desktop\\CDAC Project\\Fleet_Management_System\\Fleeman_Dotnet\\Fleeman_Dotnet.csproj",
       "projectName": "Fleeman_Dotnet",
-      "projectPath": "C:\\Project_Fleet_management\\Fleet-Management-System\\Fleeman_Dotnet\\Fleeman_Dotnet.csproj",
-      "packagesPath": "C:\\Users\\anura\\.nuget\\packages\\",
-      "outputPath": "C:\\Project_Fleet_management\\Fleet-Management-System\\Fleeman_Dotnet\\obj\\",
+      "projectPath": "C:\\Users\\sande\\OneDrive\\Desktop\\CDAC Project\\Fleet_Management_System\\Fleeman_Dotnet\\Fleeman_Dotnet.csproj",
+      "packagesPath": "C:\\Users\\sande\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sande\\OneDrive\\Desktop\\CDAC Project\\Fleet_Management_System\\Fleeman_Dotnet\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\anura\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\sande\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7976,6 +7971,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7993,8 +7989,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -8074,41 +8069,11 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Workspaces 4.8.0-3.final requires Microsoft.CodeAnalysis.Common (= 4.8.0-3.final) but version Microsoft.CodeAnalysis.Common 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.Common",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Workspaces 4.8.0-3.final requires Microsoft.CodeAnalysis.CSharp (= 4.8.0-3.final) but version Microsoft.CodeAnalysis.CSharp 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.CSharp",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Workspaces.Common 4.8.0-3.final requires Microsoft.CodeAnalysis.Common (= 4.8.0-3.final) but version Microsoft.CodeAnalysis.Common 4.8.0 was resolved.",
-      "libraryId": "Microsoft.CodeAnalysis.Common",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
     {
       "code": "NU1608",
       "level": "Warning",
@@ -8135,6 +8100,36 @@
       "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Features 4.8.0-3.final requires Microsoft.CodeAnalysis.Common (= 4.8.0-3.final) but version Microsoft.CodeAnalysis.Common 4.8.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Workspaces.Common 4.8.0-3.final requires Microsoft.CodeAnalysis.Common (= 4.8.0-3.final) but version Microsoft.CodeAnalysis.Common 4.8.0 was resolved.",
+      "libraryId": "Microsoft.CodeAnalysis.Common",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Workspaces 4.8.0-3.final requires Microsoft.CodeAnalysis.Common (= 4.8.0-3.final) but version Microsoft.CodeAnalysis.Common 4.8.0 was resolved.",
+      "libraryId": "Microsoft.CodeAnalysis.Common",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Workspaces 4.8.0-3.final requires Microsoft.CodeAnalysis.CSharp (= 4.8.0-3.final) but version Microsoft.CodeAnalysis.CSharp 4.8.0 was resolved.",
+      "libraryId": "Microsoft.CodeAnalysis.CSharp",
       "targetGraphs": [
         "net8.0"
       ]
